@@ -1,11 +1,16 @@
 function chickenSexer(bobsDecisions, expertDecisions) {
   let result = 0;
 
-  if (bobsDecisions === expertDecisions) {
-    result++;
-  } else if (bobsDecisions === "?" || expertDecisions === "?") {
-    (result = result + 0), 5;
+  for (let i = 0; i < bobsDecisions.length; i++) {
+    expertDecisions.forEach((answer) => {
+      if (bobsDecisions[i] === answer) {
+        result++;
+      } else if (bobsDecisions === "?" || answer === "?") {
+        (result = result + 0), 5;
+      }
+    });
   }
+
   return result;
 }
 
