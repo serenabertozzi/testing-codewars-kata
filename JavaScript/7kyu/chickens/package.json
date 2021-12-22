@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "jest": "^27.4.5"
+  },
+  "name": "7kyu-chicken-sexer",
+  "description": "Bob is a chicken sexer. His job is to sort baby chicks into a Male(M) and Female(F) piles.  When bob can't guess can throw his hands up and declare it with a '?'.",
+  "version": "1.0.0",
+  "main": "chicken.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
