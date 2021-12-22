@@ -3,6 +3,8 @@ function chickenSexer(bobsDecisions, expertDecisions) {
 
   if (bobsDecisions === expertDecisions) {
     result++;
+  } else if (bobsDecisions === "?" || expertDecisions === "?") {
+    (result = result + 0), 5;
   }
   return result;
 }
