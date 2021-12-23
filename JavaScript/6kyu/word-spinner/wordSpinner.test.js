@@ -1,3 +1,7 @@
-const spinWords = require("./wordSpinner");
+const spinWords = require("./wordSpinner.js");
 
-describe(spinWords, () => {});
+describe("spinWords", () => {
+  it("returns a word", () => {
+    expect(spinWords("hello")).toBe("hello");
+  });
+});

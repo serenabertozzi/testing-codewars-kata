@@ -1,5 +1,5 @@
-function spinWords(string) {
-  //TODO Have fun :)
-}
+const spinWords = (string) => {
+  return string;
+};
 
-modules.export = spinWords;
+module.exports = spinWords;
