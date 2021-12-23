@@ -2,7 +2,7 @@ const chickenSexer = require("./chicken.js");
 
 describe("chickenSexer", () => {
   it("given two equal answers, result is 1", () => {
-    expect(chickenSexer([""M""], ["M"])).toBe(1);
+    expect(chickenSexer(["M"], ["M"])).toBe(1);
   });
   it("given two different answers, result is 0", () => {
     expect(chickenSexer(["F"], ["M"])).toBe(0);
@@ -19,5 +19,13 @@ describe("chickenSexer", () => {
   });
   it("given ['M', '?', 'M'] and ['M', 'F', '?'] result is 2", () => {
     expect(chickenSexer(["M", "?", "M"], ["M", "F", "?"])).toBe(2);
+  });
+  it("given two longer arrays result is 2", () => {
+    expect(
+      chickenSexer(
+        ["M", "M", "?", "M", "?", "?", "F", "?", "?"],
+        ["?", "F", "?", "F", "?", "F", "M", "?", "F"]
+      )
+    ).toBe(4.5);
   });
 });
