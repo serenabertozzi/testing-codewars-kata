@@ -3,7 +3,9 @@ const bouncingBall = (h, b, w) => {
   let firstBounce = h * b;
   let newH = h;
 
-  if (firstBounce <= w) {
+  if (h <= 0 || b < 0 || b > 1 || w > h) {
+    bounces = -1;
+  } else if (firstBounce <= w) {
     bounces++;
   } else {
     if (firstBounce * b <= w) {

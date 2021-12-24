@@ -28,4 +28,11 @@ describe("bouncingBall", () => {
   it("returns 15", () => {
     expect(bouncingBall(30.0, 0.66, 1.5)).toEqual(15);
   });
+
+  it("returns -1 if condition is not met", () => {
+    expect(bouncingBall(0.0, 0.66, 1.5)).toEqual(-1);
+    expect(bouncingBall(5.0, -2, 1.5)).toEqual(-1);
+    expect(bouncingBall(5.0, 2, 1.5)).toEqual(-1);
+    expect(bouncingBall(2, 0.5, 7)).toEqual(-1);
+  });
 });
