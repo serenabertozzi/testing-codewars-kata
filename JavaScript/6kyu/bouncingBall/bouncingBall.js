@@ -8,16 +8,13 @@ const bouncingBall = (h, b, w) => {
   } else if (firstBounce <= w) {
     bounces++;
   } else {
-    if (firstBounce * b <= w) {
-      bounces = bounces + 3;
-    } else if (firstBounce * b > w) {
-      while (newH * b > w) {
-        bounces = bounces + 2;
-        newH = newH * b;
-      }
-      bounces++;
+    while (newH * b > w) {
+      bounces = bounces + 2;
+      newH = newH * b;
     }
+    bounces++;
   }
+
   return bounces;
 };
 
