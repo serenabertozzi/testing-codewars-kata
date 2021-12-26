@@ -3,8 +3,9 @@ Write a function that takes in a string of one or more words, and returns the sa
 Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
 
 INPUT ===> OUTPUT
-"hello" ===> "hello'
-"Hello" ===> "Hello"
-"warriors" ===> "sroirraw"
+"test" ===> "test'
+"Test" ===> "Test"
 "a test" ===> "a test"
+"hello" ===> "olleh"
+"a warriors" ===> a sroirraw"
 "Hey fellow warriors" ===> "Hey wollef sroirraw
