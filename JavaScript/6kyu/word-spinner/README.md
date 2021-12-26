@@ -8,4 +8,4 @@ INPUT ===> OUTPUT
 "hello" ===> "olleh"
 "a test" ===> "a test"
 "a warriors" ===> a sroirraw"
-"Hey fellow warriors" ===> "Hey wollef sroirraw
+"Hey fellow warriors" ===> "Hey wollef sroirraw"

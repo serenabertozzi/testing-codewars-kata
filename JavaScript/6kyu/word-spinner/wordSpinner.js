@@ -1,9 +1,10 @@
 const spinWords = (string) => {
   let words = string.split(" ");
+
   let finalSentence = words.map((word) => {
-    let singleWordChars = word.split("");
-    if (singleWordChars.length >= 5) {
-      let reversedWord = singleWordChars.reverse().join("");
+    let chars = word.split("");
+    if (chars.length >= 5) {
+      let reversedWord = chars.reverse().join("");
       return reversedWord;
     } else {
       return word;
