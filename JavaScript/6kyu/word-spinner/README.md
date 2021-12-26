@@ -5,7 +5,7 @@ Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" sp
 INPUT ===> OUTPUT
 "test" ===> "test'
 "Test" ===> "Test"
-"a test" ===> "a test"
 "hello" ===> "olleh"
+"a test" ===> "a test"
 "a warriors" ===> a sroirraw"
 "Hey fellow warriors" ===> "Hey wollef sroirraw

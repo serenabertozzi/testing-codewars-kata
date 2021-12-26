@@ -10,4 +10,7 @@ describe("spinWords", () => {
   it("returns a reversed word", () => {
     expect(spinWords("hello")).toBe("olleh");
   });
+  it("returns multiple words without reversing them", () => {
+    expect(spinWords("a test")).toBe("a test");
+  });
 });
