@@ -6,16 +6,16 @@ const isValidWalk = (walk) => {
     walk.forEach((direction) => {
       switch (direction) {
         case "n":
-          x++;
+          y++;
           break;
         case "s":
-          y++;
+          y--;
           break;
         case "w":
           x++;
           break;
         case "e":
-          y++;
+          x--;
           break;
       }
     });
