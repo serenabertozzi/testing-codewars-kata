@@ -9,4 +9,9 @@ describe("isValidWalk", () => {
       isValidWalk(["w", "e", "w", "e", "w", "e", "w", "e", "w", "e", "w", "e"])
     ).toEqual(false);
   });
+  it("inputs 10 directions", () => {
+    expect(
+      isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"])
+    ).toEqual(true);
+  });
 });
