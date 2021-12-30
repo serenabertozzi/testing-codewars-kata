@@ -14,4 +14,9 @@ describe("isValidWalk", () => {
       isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"])
     ).toEqual(true);
   });
+  it("doesn't return to starting position", () => {
+    expect(
+      isValidWalk(["n", "n", "n", "s", "n", "s", "n", "s", "n", "s"])
+    ).toEqual(false);
+  });
 });
