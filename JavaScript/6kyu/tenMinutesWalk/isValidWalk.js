@@ -1,39 +1,31 @@
 const isValidWalk = (walk) => {
-  let n = 0;
-  let s = 0;
-  let w = 0;
-  let e = 0;
+  let x = 0;
+  let y = 0;
 
   if (walk.length === 10) {
-    //equal number of opposite directions
-    // count every n, s , w and e
-    // if n == s and w == e returns true
-
     walk.forEach((direction) => {
       switch (direction) {
         case "n":
-          n++;
+          x++;
           break;
         case "s":
-          s++;
+          y++;
           break;
         case "w":
-          w++;
+          x++;
           break;
         case "e":
-          e++;
+          y++;
           break;
       }
     });
 
-    if (n == s && w == e) {
+    if (x == y) {
       return true;
-    } else {
-      return false;
     }
-  } else {
     return false;
   }
+  return false;
 };
 
 module.exports = isValidWalk;
