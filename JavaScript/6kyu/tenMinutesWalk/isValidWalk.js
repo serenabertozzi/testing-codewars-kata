@@ -1,5 +1,5 @@
 const isValidWalk = (arr) => {
-  if (arr.length < 10) {
+  if (arr.length != 10) {
     return false;
   }
 };
