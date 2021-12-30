@@ -1,31 +1,25 @@
 const isValidWalk = (walk) => {
-  let x = 0;
-  let y = 0;
+  let dx = 0;
+  let dy = 0;
 
-  if (walk.length === 10) {
-    walk.forEach((direction) => {
-      switch (direction) {
-        case "n":
-          y++;
-          break;
-        case "s":
-          y--;
-          break;
-        case "w":
-          x++;
-          break;
-        case "e":
-          x--;
-          break;
-      }
-    });
-
-    if (x == y) {
-      return true;
+  walk.forEach((direction) => {
+    switch (direction) {
+      case "n":
+        dy++;
+        break;
+      case "s":
+        dy--;
+        break;
+      case "w":
+        dx++;
+        break;
+      case "e":
+        dx--;
+        break;
     }
-    return false;
-  }
-  return false;
+  });
+
+  return walk.length === 10 && dx === 0 && dy === 0;
 };
 
 module.exports = isValidWalk;
