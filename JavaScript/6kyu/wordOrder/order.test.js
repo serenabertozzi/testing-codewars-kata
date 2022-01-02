@@ -1,5 +1,7 @@
 const order = require("./order");
 
 describe("order", () => {
-  it("...", () => {});
+  it("returns an empty string", () => {
+    expect(order("")).toBe("");
+  });
 });
